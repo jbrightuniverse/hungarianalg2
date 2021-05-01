@@ -47,11 +47,14 @@ def hungarian(matrx):
         # Step A: Find any neighbour in equality graph
         # where a row is in the tree and a col is not in the tree
         pair = None
+        flag = False
         for x in treed_x:
             for y in untreed_y:
                 if matrx[x, y] == rpotentials[x] + cpotentials[y]:
                     pair = [x, y]
+                    flag = True
                     break
+            if flag: break
 
         if not pair:
             # Step B: If all firms are in the tree, update potentials to get a new one
