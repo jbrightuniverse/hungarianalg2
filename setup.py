@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(
-    name='hungarianalg',
-    url='https://github.com/jbrightuniverse/hungarianalg',
+    name='hungarianalg2',
+    url='https://github.com/jbrightuniverse/hungarianalg2',
     author='James Yuming Yu',
-    packages=['hungarianalg'],
+    packages=['hungarianalg2'],
     install_requires=['numpy'],
     version='0.0.1',
     license='MIT',
