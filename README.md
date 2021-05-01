@@ -6,9 +6,9 @@ For a detailed overview, see [this Jupyter notebook](https://github.com/jbrightu
 
 # Usage
 
-Installation: `pip3 install hungarianalg`
+Installation: `pip3 install git+https://github.com/jbrightuniverse/hungarianalg2`
 
-Import: `from hungarianalg.alg import hungarian`
+Import: `from hungarianalg2.alg import hungarian`
 
 Function call: `result = hungarian(matrix)`
 
@@ -21,8 +21,4 @@ Properties:
 
 See `example.py` for a comprehensive example.
 
-# Issues
-
-IMPORTANT: Currently, support for decimals in the input matrix is unstable, as at large matrix dimensions, floating point errors propagate and cause the algorithm to fail to terminate. 
-
-It is recommended instead to linearly scale the input matrix by a power of 10 to a set of whole numbers, run the algorithm, and then scale back to the original precision at the end.
+NOTE: This version appears to resolve the decimals issue faced by the original version of this algorithm; however, this has not been thoroughly tested.
