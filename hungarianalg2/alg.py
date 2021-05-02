@@ -113,9 +113,9 @@ def hungarian(matrx):
             treed_x.add(wasMatchedTo)
             treed_y.add(pair[1])
             untreed_y.remove(pair[1])
-            y_nodes[pair[1]].treed = True
+            y_nodes[pair[1]].in_tree = True
             y_nodes[pair[1]].parent = pair[0]
-            x_nodes[wasMatchedTo].treed = True
+            x_nodes[wasMatchedTo].in_tree = True
             x_nodes[wasMatchedTo].parent = pair[1]
     
     revenues = [matrx[i, matching[i]] for i in range(size)]
