@@ -83,8 +83,9 @@ def hungarian(matrx):
             # Step E: Swap the alternating path in our alternating tree attached to the worker we matched
             source = pair[0]
             matched = 1
-            while x_nodes[source].parent != None:
+            while True:
                 if matched:
+                    if x_nodes[source].parent == None: break
                     above = x_nodes[source].parent
                 else:
                     above = y_nodes[source].parent
