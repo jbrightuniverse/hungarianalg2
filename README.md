@@ -6,7 +6,7 @@ For a detailed overview, see [this Jupyter notebook](https://github.com/jbrightu
 
 # Usage
 
-Installation: `pip3 install git+https://github.com/jbrightuniverse/hungarianalg2`
+Installation: `pip install git+https://github.com/jbrightuniverse/hungarianalg2`
 
 Import: `from hungarianalg2.alg import hungarian`
 
